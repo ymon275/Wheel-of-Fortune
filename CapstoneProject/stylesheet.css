@@ -1,0 +1,316 @@
+.title {
+  text-align: center;
+  margin: 0;
+  padding: 50px;
+  font-size: 100;
+}
+
+body {
+  background-color: #69b9ff;
+  margin: 0;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#wheel {
+  height: 500px;
+  width: 500px;
+  background: linear-gradient(90deg, #ffc0cb 50%, #00ffff 50%);
+  border: black solid 5px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  color: #fff;
+    /* background: -webkit-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -webkit-linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
+    background: -o-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -o-linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
+    background: -moz-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -moz-linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
+    background: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #dd0000 66%, #ffc608 66%); */
+}
+
+#button {
+  display: block;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin: -50px 0 0 -50px;
+}
+
+.buttonStart {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: green;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.buttonStart:hover {
+  background-color: green;
+}
+
+.buttonStart:active {
+  background-color: green;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#item1 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item2 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item3 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item4 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item5 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item6 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item7 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item8 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item9 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item10 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item11 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item12 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item13 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item14 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item15 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+#item16 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+#item17 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+#item18 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+#item19 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+#item20 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+#item21 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+#item22 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+#item23 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+#item24 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+#item25 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+#item26 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+#item27 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+#item28 {
+  background-color: lightgreen;
+  border: black solid 5px;
+  margin: 10px;
+  text-align: center;
+  padding: 50px 30px;
+  font-size: larger;
+}
+
+tr.tableRow {
+  margin: 0 200px;
+}
+
+table.table {
+  margin: 0 auto 100px auto;
+}
+
+input {
+  display: inline-block;
+}

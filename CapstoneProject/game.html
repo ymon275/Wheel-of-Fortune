@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wheel of Fortune</title>
+    <link href="stylesheet.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Wheel of Fortune</h1>
+    </header>
+    <table class="table">
+      <tr class="tableRow">
+        <td id= "item1"></td>
+        <td id= "item2"></td>
+        <td id= "item3"></td>
+        <td id= "item4"></td>
+        <td id= "item5"></td>
+        <td id= "item6"></td>
+        <td id= "item7"></td>
+        <td id= "item8"></td>
+        <td id= "item9"></td>
+        <td id= "item10"></td>
+        <td id= "item11"></td>
+        <td id= "item12"></td>
+        <td id= "item13"></td>
+        <td id= "item14"></td>
+      </tr>
+      <tr class="tableRow">
+        <td id= "item15"></td>
+        <td id= "item16"></td>
+        <td id= "item17"></td>
+        <td id= "item18"></td>
+        <td id= "item19"></td>
+        <td id= "item20"></td>
+        <td id= "item21"></td>
+        <td id= "item22"></td>
+        <td id= "item23"></td>
+        <td id= "item24"></td>
+        <td id= "item25"></td>
+        <td id= "item26"></td>
+        <td id= "item27"></td>
+        <td id= "item28"></td>
+      </tr>
+    </table>
+    <div style = "margin: 0">
+        <label for="charInput">Your Guess Here: </label>
+        <input type="text" id="charInput" name="charInput" />
+        <button onclick= "getInput()" id="submitButton">Submit</button>
+    </div><br></br>
+    <div style="text-align: center">
+      <span id="wheel">
+        <span>
+          <button onclick="timeSpin()" id="button">Spin</button>
+        </span>
+      </span>
+    </div>
+    <footer>
+      <p style= "text-align: right; margin: 20px;">
+        <a href="index.html">Return to home</a>
+      </p>
+    </footer>
+    <script src="game.js">
+      window.onload = phrasePicker;
+    </script>
+  </body>
+</html>
