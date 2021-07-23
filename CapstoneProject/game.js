@@ -11,8 +11,8 @@ function timeSpin() {
     let spin = Math.round(Math.random() * 100);
     spinInterval += spin;
     let rotate = `rotate(${spinInterval}deg)`;
-    document.getElementById("wheel").style.transform = rotate;
-    console.log(rotate);
+    document.querySelector(".container").style.transform = rotate;
+    // console.log(rotate);
   }, 100);
 
   setTimeout(function () {

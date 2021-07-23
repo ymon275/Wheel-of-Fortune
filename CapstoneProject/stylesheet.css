@@ -1,3 +1,7 @@
+*{
+	box-sizing:border-box;
+}
+
 .title {
   text-align: center;
   margin: 0;
@@ -8,11 +12,101 @@
 body {
   background-color: #69b9ff;
   margin: 0;
+  /* display:flex; */
+	align-items:center;
+	justify-content: center;
+	/* height:100vh; */
+	/* overflow:hidden; */
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
 
-#wheel {
+.container{
+	width:500px;
+	height:500px;
+	background-color: white;
+	border-radius:50%;
+	border:15px solid black;
+	position: relative;
+	overflow: hidden;
+	transition: 5s;
+  margin: auto;
+}
+
+.container div{
+	height:50%;
+	width:200px;
+	position: absolute;
+	clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+	transform:translateX(-50%);
+	transform-origin:bottom;
+	text-align:center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size:20px;
+	font-weight:bold;
+	font-family:sans-serif;
+	color:#fff;
+	left:135px;
+  margin: auto;
+}
+
+.container .one{
+	background-color: #5dd467;
+	left:50%;
+  writing-mode: vertical-lr;
+}
+.container .two{
+	background-color: orange;
+	transform: rotate(45deg);
+  writing-mode: vertical-lr;
+}
+.container .three{
+	background-color: #e91e63;
+	transform:rotate(90deg);
+  writing-mode: vertical-lr;
+}
+.container .four{
+	background-color: black;
+	transform: rotate(135deg);
+  writing-mode: vertical-lr;
+}
+.container .five{
+	background-color: #8ea09d;
+	transform: rotate(180deg);
+  writing-mode: vertical-lr;
+}
+.container .six{
+	background-color: #3c99c4;
+	transform: rotate(225deg);
+  writing-mode: vertical-lr;
+}
+.container .seven{
+	background-color: rgb(151, 151, 206);
+	transform: rotate(270deg);
+  writing-mode: vertical-lr;
+}
+.container .eight{
+	background-color: #f44336;
+	transform: rotate(315deg);
+  writing-mode: vertical-lr;
+}
+
+.arrow{
+	position: absolute;
+	top:0;
+	left:50%;
+	transform: translate(-50%, 650%);
+	color:#fff;
+}
+
+.arrow::before{
+	content:"\1F817";
+	font-size:50px;
+}
+
+/* #wheel {
   height: 500px;
   width: 500px;
   background: linear-gradient(90deg, #ffc0cb 50%, #00ffff 50%);
@@ -20,12 +114,22 @@ body {
   border-radius: 50%;
   display: inline-block;
   position: relative;
-  color: #fff;
-    /* background: -webkit-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -webkit-linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
-    background: -o-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -o-linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
-    background: -moz-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -moz-linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
-    background: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #dd0000 66%, #ffc608 66%); */
-}
+  color: black;
+} */
+
+/* .container .slice {
+  z-index: 150;
+  position: absolute;
+  top: calc(50% - 45.8148928635px);
+  height: 91.6297857271px;
+  left: 50%;
+  width: 50%;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  display: block;
+  transform-origin: left center;
+} */
 
 #button {
   display: block;
@@ -35,10 +139,19 @@ body {
   width: 100px;
   height: 100px;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  margin: -50px 0 0 -50px;
+  /* margin: -50px 0 0 -50px; */
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, 300%);
+	z-index:10;
+	text-transform: uppercase;
+	font-weight:bold;
+	font-size:20px;
+	font-family: sans-serif;
+	cursor: pointer;
+	outline:none;
+	letter-spacing: 1px;
 }
 
 .buttonStart {
@@ -206,6 +319,7 @@ body {
   padding: 50px 30px;
   font-size: larger;
 }
+
 #item17 {
   background-color: lightgreen;
   border: black solid 5px;
@@ -214,6 +328,7 @@ body {
   padding: 50px 30px;
   font-size: larger;
 }
+
 #item18 {
   background-color: lightgreen;
   border: black solid 5px;
@@ -222,6 +337,7 @@ body {
   padding: 50px 30px;
   font-size: larger;
 }
+
 #item19 {
   background-color: lightgreen;
   border: black solid 5px;
@@ -230,6 +346,7 @@ body {
   padding: 50px 30px;
   font-size: larger;
 }
+
 #item20 {
   background-color: lightgreen;
   border: black solid 5px;
@@ -238,6 +355,7 @@ body {
   padding: 50px 30px;
   font-size: larger;
 }
+
 #item21 {
   background-color: lightgreen;
   border: black solid 5px;
@@ -246,6 +364,7 @@ body {
   padding: 50px 30px;
   font-size: larger;
 }
+
 #item22 {
   background-color: lightgreen;
   border: black solid 5px;
@@ -254,6 +373,7 @@ body {
   padding: 50px 30px;
   font-size: larger;
 }
+
 #item23 {
   background-color: lightgreen;
   border: black solid 5px;
@@ -262,6 +382,7 @@ body {
   padding: 50px 30px;
   font-size: larger;
 }
+
 #item24 {
   background-color: lightgreen;
   border: black solid 5px;
@@ -270,6 +391,7 @@ body {
   padding: 50px 30px;
   font-size: larger;
 }
+
 #item25 {
   background-color: lightgreen;
   border: black solid 5px;
@@ -278,6 +400,7 @@ body {
   padding: 50px 30px;
   font-size: larger;
 }
+
 #item26 {
   background-color: lightgreen;
   border: black solid 5px;
@@ -286,6 +409,7 @@ body {
   padding: 50px 30px;
   font-size: larger;
 }
+
 #item27 {
   background-color: lightgreen;
   border: black solid 5px;
@@ -294,6 +418,7 @@ body {
   padding: 50px 30px;
   font-size: larger;
 }
+
 #item28 {
   background-color: lightgreen;
   border: black solid 5px;

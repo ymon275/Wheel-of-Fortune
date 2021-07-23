@@ -46,13 +46,26 @@
         <label for="charInput">Your Guess Here: </label>
         <input type="text" id="charInput" name="charInput" />
         <button onclick= "getInput()" id="submitButton">Submit</button>
-    </div><br></br>
+    </div><br></br><br></br>
     <div style="text-align: center">
-      <span id="wheel">
+      <button onclick="timeSpin()" id="button">Spin</button>
+	    <span class="arrow"></span>
+      <div class="container">
+        <div class="one">100</div>
+        <div class="two">50</div>
+        <div class="three">500</div>
+        <div class="four">Bankrupt</div>
+        <div class="five">500</div>
+        <div class="six">50</div>
+        <div class="seven">200</div>
+        <div class="eight">300</div>
+      </div>
+      <!-- <span id="wheel">
         <span>
           <button onclick="timeSpin()" id="button">Spin</button>
         </span>
-      </span>
+
+      </span> -->
     </div>
     <footer>
       <p style= "text-align: right; margin: 20px;">
