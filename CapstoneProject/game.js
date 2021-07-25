@@ -39,8 +39,13 @@ const PARIS = { phrase: "    EIFFEL        TOWER     ", type: "Place" };
 const EMPIRE = { phrase: " EMPIRE STATE    BUILDING   ", type: "Place" };
 const LONDON = { phrase: "   BIG BEN      IN LONDON   ", type: "Place" };
 const PRICE = { phrase: "  THE PRICE      IS RIGHT   ", type: "Phrase" };
+const CITY = { phrase: " A CITY RICH    IN HISTORY  ", type: "Phrase"};
+const SCENE = { phrase: "    A BAD         SCENE     ", type: "Phrase"};
+const LUCKY = { phrase: " DO YOU FEEL  LUCKY TONIGHT ", type: "Phrase"};
+const LENNON = { phrase: " JOHN LENNON     IS SHOT    ", type: "Headline"};
+const MARTIN = { phrase: " RICKY MARTIN     IS GAY    ", type: "Headline"};
 
-let phrasesArray = [MARY, SPIN, PARIS, EMPIRE];
+let phrasesArray = [MARY, SPIN, PARIS, EMPIRE, LONDON, PRICE, CITY, SCENE, LUCKY, LENNON, MARTIN];
 
 //returns a random phrase object
 window.onload = function () {
