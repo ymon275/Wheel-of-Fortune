@@ -8,6 +8,8 @@ var rotation;
 var globalPhrase;
 var points = 0;
 
+document.getElementById("pointsPopUp").innerHTML = `Points: ${points}`
+
 function timeSpin() {
   var loop = setInterval(function () {
     let spin = Math.round(Math.random() * 200);
@@ -26,10 +28,14 @@ function timeSpin() {
   document.getElementById("submitButton").disabled = false;
 }
 
-//reads the rotation and gives points
-function clearInt(loop) {
-  clearInterval(loop);
-  assignPoints();
+// //reads the rotation and gives points
+// function clearInt(loop) {
+//   clearInterval(loop);
+//   assignPoints();
+// }
+
+document.querySelector(".close").onclick = function() {
+  document.querySelector(".modal").style.display = "none";
 }
 
 //An array of phrases
@@ -87,6 +93,12 @@ function whiteOut(idNum) {
   document.getElementById(`item${idNum}`).style.backgroundColor = "white";
 }
 
+//Pops up the points at the end
+function popUp() {
+  document.getElementById("pointsPopUp").innerHTML = `Points: ${points}`
+  document.querySelector(".modal").style.display = "block";
+}
+
 //Makes sure that the input is valid: a single letter character or phrase
 function checkInput(input) {
   if (
@@ -142,6 +154,7 @@ function getInput() {
       displayLetter(`item${i + 1}`, phrase[i]);
       assignPoints();
     }
+    popUp();
   } else {
     alert(failed - checkInput);
   }
@@ -163,35 +176,35 @@ function assignPoints() {
   var angle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
   console.log(angle);
   console.log(value);
-  if (-22.5 < angle && angle < 22.5) {
+  if (angle > -22.5 && angle < 22.5) {
     points += 100;
     console.log(points);
     document.getElementById("points").innerHTML = `Points: ${points}`;
-  } else if (-67.5 < angle && angle < -22.5) {
+  } else if (angle > -67.5 && angle < -22.5) {
     points += 50;
     console.log(points);
     document.getElementById("points").innerHTML = `Points: ${points}`;
-  } else if (-112.5 < angle && angle < -67.5) {
+  } else if (angle > -112.5 && angle < -67.5) {
     points += 500;
     console.log(points);
     document.getElementById("points").innerHTML = `Points: ${points}`;
-  } else if (-157.5 < angle && angle < -112.5) {
+  } else if (angle > -157.5 && angle < -112.5) {
     points = 0;
     console.log(points);
     document.getElementById("points").innerHTML = `Points: ${points}`;
-  } else if ((-180 < angle && angle < -157.5) || 157.5 < angle < 180) {
+  } else if (angle > -180 && angle < -157.5) {
     points += 500;
     console.log(points);
     document.getElementById("points").innerHTML = `Points: ${points}`;
-  } else if (112.5 < angle && angle < 157.5) {
+  } else if (angle > 112.5 && angle < 157.5) {
     points += 50;
     console.log(points);
     document.getElementById("points").innerHTML = `Points: ${points}`;
-  } else if (67.5 < angle && angle < 112.5) {
+  } else if (angle > 67.5 && angle < 112.5) {
     points += 200;
     console.log(points);
     document.getElementById("points").innerHTML = `Points: ${points}`;
-  } else if (22.5 < angle && angle < 67.5) {
+  } else if (angle > 22.5 && angle < 67.5) {
     points += 300;
     console.log(points);
     document.getElementById("points").innerHTML = `Points: ${points}`;
