@@ -118,7 +118,7 @@ body {
 	position: absolute;
 	top:50%;
 	left:50%;
-	transform:translate(-50%, 400%);
+	transform:translate(-50%, 375%);
 	z-index:10;
 	text-transform: uppercase;
 	font-weight:bold;
@@ -127,6 +127,30 @@ body {
 	cursor: pointer;
 	outline:none;
 	letter-spacing: 1px;
+}
+
+#playButton {
+  display: inline-block;
+  padding: 15px 25px;
+  margin: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: green}
+
+.button:active {
+  background-color: green;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .buttonStart {

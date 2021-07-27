@@ -7,6 +7,7 @@ var spinResistance = 0;
 var rotation;
 var globalPhrase;
 var points = 0;
+var counter = 0;
 
 document.getElementById("pointsPopUp").innerHTML = `Points: ${points}`
 
@@ -145,8 +146,14 @@ function getInput() {
       ) {
         // console.log(`item${i + 1}`);
         displayLetter(`item${i + 1}`, phrase[i]);
+        counter++;
+        console.log(counter);
         assignPoints();
       }
+    }
+    phrase = getPhrase().join("").replace(/\s+/g, "").split("");
+    if (counter == phrase.length) {
+      popUp();
     }
   } else if (completePhrase(input)) {
     let phrase = getPhrase();
